@@ -1,5 +1,5 @@
-import { Component, OnInit, Input,Output} from '@angular/core';
-import { EventEmitter } from 'events';
+import { Component, OnInit, Input,Output, EventEmitter} from '@angular/core';
+// import { EventEmitter } from 'events';
 
 @Component({
   selector: 'app-first-component',
@@ -10,8 +10,6 @@ export class FirstComponentComponent implements OnInit {
 @Input() sample1;
 
 @Output('newti') king= new EventEmitter();
-
-
 
 firstCardArray =[{a:'Abc',b:'def'}];
 
