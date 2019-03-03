@@ -52,15 +52,15 @@
               <app-first-component [sample1]=test></app-first-component>
               
             </tr>
-            <app-post></app-post>
-            <!-- <tr>
-              <app-second-component></app-second-component>
-            </tr> -->
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
+            <tr *ngFor ="let p of postComponentJson">
+                <app-post [postObjects]=p></app-post> 
+           <!-- <td><app-second-component></app-second-component></td> -->
+           
             </tr>
+           
+              
+           
+            
           </table>
 
 
