@@ -30,7 +30,8 @@
         </td>
         <td class="loginDetailsCol">
           <div class="circle">
-            <img class="circleImg" src="">
+            <img class="circleImg" src="
+            ./assets/image/profileBackground.jpg" />
           </div>
         </td>
         <td class="profileHolderName">Cally
@@ -47,11 +48,14 @@
         <td class="postMidBody">
           <table class="postMidBodyTable">
             <tr>
-              <app-first-component [sample1]=test (newti)=rootTest($event)></app-first-component>
+              <!-- <app-first-component [sample1]=test (newti)=rootTest($event)></app-first-component> -->
+              <app-first-component [sample1]=test></app-first-component>
+              
             </tr>
-            <tr>
+            <app-post></app-post>
+            <!-- <tr>
               <app-second-component></app-second-component>
-            </tr>
+            </tr> -->
             <tr>
               <td></td>
               <td></td>

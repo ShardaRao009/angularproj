@@ -9,24 +9,24 @@ import { EventEmitter } from 'events';
 export class FirstComponentComponent implements OnInit {
 @Input() sample1;
 
-@Output('newti') king= new EventEmitter();
+// @Output('newti') king= new EventEmitter();
 
 
 
-firstCardArray =[{a:'Abc',b:'def'}];
+firstCardArray =[];
 
 
   constructor() { }
 
   ngOnInit() {
-    // this.firstCardArray=[{name:'jony',post:'kkr',likes:'21',comments:'hdjdhsgjfs'},
-    // {name:'cally',post:'hdh',likes:'19',comments:'hdjdhsgjdhkjfs'},
-    // {name:'belly',post:'jdsd',likes:'19',comments:'hdjdhsjjjjjgjfs'}]
-    // console.log(this.sample1);
+     this.firstCardArray=[{name:'jony',post:'kkr',likes:'21',comments:'hdjdhsgjfs'},
+     {name:'cally',post:'hdh',likes:'19',comments:'hdjdhsgjdhkjfs'},
+     {name:'belly',post:'jdsd',likes:'19',comments:'hdjdhsjjjjjgjfs'}];
+    console.log(this.sample1);
   }
 
-  sampleClick(){
-    let r = {a:"asd",b:"adfas"};
-    this.king.emit(r);
-  }
+  // sampleClick(){
+  //   let r = {a:"asd",b:"adfas"};
+  //  // this.king.emit(r);
+  // }
 }
