@@ -11,13 +11,7 @@ export class FirstComponentComponent implements OnInit {
 
 // @Output('newti') king= new EventEmitter();
 
-<<<<<<< HEAD
-
-
 firstCardArray =[];
-=======
-firstCardArray =[{a:'Abc',b:'def'}];
->>>>>>> b1dfedd91989e8072ec15f7a1d2962f16c858b88
 
 
   constructor() { }

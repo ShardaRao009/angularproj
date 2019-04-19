@@ -1,3 +1,27 @@
-<div class="postCard">
-    <div>{{postObjects.userName}}</div>
+<!-- <div class="postCard">
+    <div>{{postObjects.category.data}}</div>
+</div>
+
+<div>
+    <button (click)="postClick()">click</button>
+</div> -->
+<div *ngFor="let p of postObjects">
+
+<div *ngIf="p.category.type=='0'">
+    <app-text-component [dataForText]=p.category.data [data]=p></app-text-component>
+</div>
+<div *ngIf="p.category.type=='2'">
+    <app-poll-component [dataForPoll]=p [answer]=p.category.data.answerForPoll></app-poll-component>
+</div>
+
+<div *ngIf="p.category.type=='1'">
+    <app-image-component [dataForImagePost]=p></app-image-component>
+</div>
+ <div >
+    <app-comment-component></app-comment-component>
+</div>
+<div>
+    <app-sub-comment-component></app-sub-comment-component>
+</div> 
+
 </div>

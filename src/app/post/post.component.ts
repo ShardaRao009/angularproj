@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { text } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-post',
@@ -7,14 +8,19 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
-@Input() postObjects;
+   @Input() postObjects;
+  // @Output() postText = new EventEmitter();
+
+  // postClick() {
+  //   this.postText.emit = (this.postObjects.category);
+  // }
+
+
 
   constructor() { }
 
   ngOnInit() {
-    console.log(this.postObjects);
+   
   }
-post(){
-  
-}
+
 }

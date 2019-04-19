@@ -41,35 +41,24 @@
 
     </table>
   </div>
+<div>
+  <app-first-component></app-first-component>
+</div>
+  <style>
+  .main-cntr{
+    display: flex;
+    width: 100%
+  }
+  .main-cntr .col{
+    width: 33%;
+  }
+  </style>
   <div class="midBody">
-    <table class="midBodyDivisionTable">
-      <tr>
-        <td class="sideNav"></td>
-        <td class="postMidBody">
-          <table class="postMidBodyTable">
-            <tr>
-              <!-- <app-first-component [sample1]=test (newti)=rootTest($event)></app-first-component> -->
-              <app-first-component [sample1]=test></app-first-component>
-              
-            </tr>
-            <tr *ngFor ="let p of postComponentJson">
-                <app-post [postObjects]=p></app-post> 
-           <!-- <td><app-second-component></app-second-component></td> -->
-           
-            </tr>
-           
-              
-           
-            
-          </table>
-
-
-
-        </td>
-      </tr>
-
-
-    </table>
+   <div class="main-cntr">
+     <div class="col"></div>
+     <div class="col"><app-post [postObjects]=postCardJson></app-post></div>
+     <div class="col"></div>
+   </div>
   </div>
 </div>
 

@@ -1,0 +1,12 @@
+<div class="postIfPoll">
+    <div class="firstPortionPoll">
+        
+            <div class="circle">
+                <img class="circleImg" src= {{dataForPoll.image}} />
+              </div>
+              <div class="posterNamePoll">{{dataForPoll.name}}</div>
+        
+    </div>
+    <div  class="secondPortionPoll">{{dataForPoll.category.data.questionForPoll.ques}}</div>
+        <div class="answerPoll" *ngFor="let i of answer">{{i.ans}}</div> 
+</div>

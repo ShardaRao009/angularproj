@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-second-component',
@@ -7,11 +7,16 @@ import { Component, OnInit, Output } from '@angular/core';
 })
 export class SecondComponentComponent implements OnInit {
   
+@Output() postCard= new EventEmitter();
+
 
 
   constructor() { }
 
   ngOnInit() {
+  
   }
-
+  postCardClick(){
+    this.postCard.emit('abc');
+  }
 }

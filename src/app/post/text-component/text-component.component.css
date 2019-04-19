@@ -1,0 +1,38 @@
+.postIfText{
+    background: white;
+    height: 200px;
+}
+.firstPortion{
+    height: 60px;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    width: 100%
+}
+.secondPortion{
+    padding-left: 15px;
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 12px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+}
+.circle{
+    border: 1px solid #666666;
+  border-radius: 50%;
+  width: 45px;
+  height: 37px;
+}
+.circleImg{
+   border-radius: 50%;
+  width: 45px;
+  height: 37px;
+}
+.posterName{
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
